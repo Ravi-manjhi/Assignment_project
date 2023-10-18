@@ -1,0 +1,55 @@
+@import "../../styles/variable.scss";
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 5px;
+
+  @include md {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .headerTitle {
+    font-size: 1.8rem;
+  }
+
+  .searchBar {
+    padding: 6px;
+    background-color: $soft-bg;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+    svg {
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      margin-left: 4px;
+
+      &:focus {
+        padding: 0 10px;
+      }
+
+      @include md {
+        padding: 0 20px;
+
+        &:focus {
+          padding: 0 25px;
+        }
+      }
+      @include sm {
+        padding: 0 10px;
+
+        &:focus {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+}

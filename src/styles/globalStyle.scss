@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@100;300;400;500;600&display=swap");
+@import "./variable.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: min(20rem) 1fr;
+  grid-template-areas: "sidebar main ";
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 5.5rem 1fr;
+  }
+
+  .container {
+    width: 100%;
+    grid-area: main;
+    padding: 1rem;
+    background-color: $main-bg;
+
+    @include xxl {
+      width: 99%;
+    }
+    @include xl {
+      width: 99%;
+    }
+    @include md {
+      width: 99%;
+    }
+  }
+}

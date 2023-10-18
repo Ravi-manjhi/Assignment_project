@@ -1,0 +1,22 @@
+.products {
+  width: 99%;
+  position: relative;
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      padding: 1rem;
+      border-radius: 5px;
+      border: 1px solid #aca8a8;
+      background-color: #dbdada;
+      color: #242424;
+
+      &:hover {
+        background: #ffffff;
+      }
+    }
+  }
+}

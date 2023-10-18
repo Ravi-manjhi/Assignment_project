@@ -1,0 +1,42 @@
+@import "../../styles/variable.scss";
+.home {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  .homeStats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+
+    @include xl {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include md {
+      grid-template-columns: 1fr;
+    }
+  }
+  .HomeCharts {
+    display: grid;
+    grid-template-columns: 65% 1fr;
+    gap: 2rem;
+
+    @include xl {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .sell {
+    height: 100%;
+    width: 100%;
+    background-color: $soft-bg;
+    padding: 10px;
+
+    @include md {
+      width: 500px;
+    }
+  }
+}

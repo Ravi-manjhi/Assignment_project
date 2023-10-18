@@ -1,0 +1,22 @@
+@import "../../styles/variable.scss";
+.barChartBox {
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  background-color: $soft-bg;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+
+  .barTitle {
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .chart {
+    width: 100%;
+    max-height: 300px;
+  }
+}
