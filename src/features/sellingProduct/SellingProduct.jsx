@@ -1,5 +1,4 @@
 import ProductDataTable from "../productDataTable/ProductDataTable";
-import "./sellingProduct.scss";
 import { sellProduct } from "../../data";
 
 const columns = [
@@ -47,7 +46,6 @@ export default function SellingProduct() {
       <div className="info">
         <h2>Product Sell</h2>
       </div>
-
       <ProductDataTable columns={columns} rows={sellProduct} />
     </>
   );
